@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends surve form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Friends TV Serias Survey Form</h1>
+      <hr>
+      <p id="description">Tell us about your experience with Friends TV series</p>
+    </header>
+    <main>
+      <form
+        action="#"
+        method="get"
+        id="survey-form"
+      >
+        <fieldset>
+          <label for="name" id="name-label">*Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            >
+          </label>
+          <label for="number" id="number-label">*Age
+            <input
+              type="number"
+              name="age"
+              id="number"
+              required
+              placeholder="Enter your age"
+              min="16"
+              max="120"
+            >
+          </label>
+          <label for="email" id="email-label">*Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            >
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">
+            How do you watch Friends TV Serias?
+          </label>
+          <select name="how_do_you_watch" id="dropdown">
+            <option value="#">Select an option </option>
+            <option value="website">Website</option>
+            <option value="tv">TV</option>
+            <option value="youtube">Youtube</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="like">
+            How much do you like Friends TV Serias?
+          </label>
+          <label for="i_love_it">
+            <input
+              type="radio"
+              id="like"
+              name="like"
+              class="inline"
+              value="i_love_it"
+              >
+              I love it!
+          </label>
+          <label for="i_like_it">
+            <input
+              type="radio"
+              name="like"
+              id="i_like_it"
+              class="inline"
+              value="i_like_it"
+            >
+              I like it
+          </label>
+          <label for="it's_ok">
+            <input
+              type="radio"
+              name="like"
+              id="it's_ok"
+              class="inline"
+              value="it's_ok"
+            >
+            It"s ok
+          </label>
+          <label for="not_really">
+            <input
+              type="radio"
+              name="like"
+              id="not_really"
+              class="inline"
+              value="not_really"
+            >
+              Not really
+          </label>
+        </fieldset>
+        <fieldset id="how_many_seasons">
+          <label for="dropdown_seasons">
+            How many seasons of Friends TV Serias have you watched?
+          </label>
+          <select id="dropdown_seasons" name="how_many_seasons">
+            <option value="#">Select an option</option>
+            <option value="1">1</option>
+            <option value="2-5">2-5</option>
+            <option value="5-9">5-9</option>
+            <option value="10">10</option>
+          </select>
+        </fieldset>
+        <fieldset id="who_do_you_watch">
+          <label for="alone">
+            Tell us more about your favorite character(s) or episode(s)
+          </label>
+          <span>(Check all that apply):</span>
+          <label for="alone">
+            <input
+              type="checkbox"
+              id="alone"
+              value="alone"
+              name="alone"
+              class="inline"
+            >
+              Alone
+          </label>
+          <label for="partner">
+            <input
+              type="checkbox"
+              id="partner"
+              name="partner"
+              value="partner"
+              class="inline"
+            >
+            Partner
+          </label>
+          <label for="friends">
+            <input
+            type="checkbox"
+            id="friends"
+            value="friends"
+            name="friends"
+            class="inline"
+            >
+            Friends
+          </label>
+          <label for="family">
+            <input
+              type="checkbox"
+              id="family"
+              name="family"
+              value="family"
+              class="inline"
+            >
+            Family
+          </label>
+          <label for="other">
+            <input
+            type="checkbox"
+            id="other"
+            name="other"
+            value="other"
+            class="inline"
+            >
+            Other
+          </label>
+        </fieldset>
+        <fieldset id="textarea">
+          <label for="others">
+            Tell us more about your favorite character(s) or episode(s)
+          </label>
+          <textarea
+            name="others"
+            id="others"
+            rows="5"
+            cols="40"
+            placeholder="Tell us more about..."
+          ></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy 2022 Vasyl Pavlenko</p>
+    </footer>
+  </body>
+
+</html>
